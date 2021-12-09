@@ -1,0 +1,338 @@
+/*초기화 */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul,li {list-style: none;}
+a {text-decoration: none;}
+body {overflow-x: hidden; }
+
+/* 스타일 */
+#wrapper {
+  width: 100%;
+  height: auto;
+}
+
+/* 메인 */
+#container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/man-g16552b290_1920.jpg);
+  background-repeat: none;
+  position: relative;
+  z-index: 1;
+}
+
+#container-whitebox {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 20%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* 메뉴 */
+#header {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+#menu-trigger {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 25px;
+  left: 7vw;
+}
+
+#menu-trigger div {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 8px 0 0 8px;
+}
+
+#gnb {
+  width: 80vw;
+  height: 5vh;
+  position: absolute;
+  top: 2.5vh;
+  left: 10vw;
+}
+
+#gnb li {
+  background-repeat: none;
+  width: 30px;
+  height: 30px; 
+  position: absolute;
+  top: 0.6vh;
+}
+
+#gnb li:nth-child(1) {
+  background-image: url(/img/search.png);
+  background-size: 30px;
+}
+
+#gnb li:nth-child(2) {
+  width: 120px;
+  height: 80px;
+  background-image: url(/img/main-logo.png);
+  left: 50%;
+  top: -2vh;
+  transform: translate(-50%);
+}
+
+#gnb li:nth-child(3) {
+  border: 1px solid red;
+  right: 3vw;
+}
+
+#gnb li:nth-child(4) {
+  border: 1px solid red;
+  right: 0vw;
+}
+
+/* 메인텍스트 */
+#main-text-box {
+  width: 60vw;
+  height: 40vh;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  text-align: center;
+}
+
+#main-text-box h1 {
+  font-size: 48px;
+  color: #FFCA11;
+  text-shadow: 0px 2px 4px rgb(51, 51, 51);;
+}
+
+#main-text-box p {
+  font-size: 20px;
+  color: #fff;
+  padding-top: 3vh;
+  text-shadow: 0px 4px 6px rgb(51, 51, 51);;
+  line-height: 30px;
+}
+
+#nexcollection {
+  width: 10vw;
+  height: 5vh;
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 1.4vh;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%);
+}
+#nexcollection p {
+  font-size: 0.85rem;
+}
+
+
+/* 화살표 아이콘 */
+#main-array-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(/img/array.png);
+  background-repeat: none;  
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%);
+}
+
+/* 소개 */
+#containerTwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#containerTwo>p:nth-child(1) {
+  font-size: 190px;
+  transform: rotate(18deg);
+  position: absolute;
+  top: 0;
+  left: -2vw;
+  font-weight: bold;
+  opacity: 5%;
+}
+
+#containerTwo>p:nth-child(2) {
+  font-size: 126px;
+  transform: rotate(18deg);
+  font-weight: bold;
+  opacity: 5%;
+  position: absolute;
+  bottom: 0;
+  right: -2vw;
+}
+
+#containerTwo video {
+ position: absolute;
+ top: 20vh;
+ left: 10vw;
+}
+
+#about-textbox {
+position: absolute;
+top: 34vh;
+right: 11vw;
+}
+
+#about-textbox h2 {
+  font-size: 46px;
+}
+
+#about-textbox>p {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 2vh;
+  letter-spacing: -1px;
+}
+
+#about-footerbox, #about-footerbox-two {
+  width: 12vw;
+  height: 5vh;
+  border: 1px solid #707070;
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.3vh;
+  float: left;
+  margin: 5vw 0 0 0;
+}
+
+#about-footerbox>p,#about-footerbox-two>p {
+  font-size: 16px;
+  padding-left: 6px;
+  color: #707070;
+}
+
+#about-footerbox>div {
+  padding: 3px 10px 0 0;
+}
+
+#about-footerbox-two {
+  width: 15vw;
+  float: left;
+  margin: 5vw 0 0 3vw;
+}
+
+#about-footerbox-two>div {
+  padding: 3px 10px 0 0;
+}
+
+/* 제품 */
+#containerThree {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  color: #fff;
+}
+
+#product {
+  overflow: hidden;
+  width: 33.33vw;
+  height: 100vh;
+  background: linear-gradient( to bottom, #F99C7B, #FFE3D9);
+}
+
+#product>span, #product-two>span, #product-three>span {
+  font-size: 140px;
+  opacity: 30%;
+  font-weight: bold;
+  transform: rotate(-25deg);
+  padding-left: 5vw;
+  position: absolute;
+  top: 50vh;
+}
+
+#product-logo {
+  width: 99px;
+  height: 70px;
+  background-image: url(/img/product-logo.png);
+  background-repeat: none;
+  position: absolute;
+  top: 3vh;
+  margin-left: 1.5vw;
+}
+
+#product-text {
+  width: 20vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 13vh;
+  margin-left: 4vw;
+  
+}
+
+#product-text h3 {
+  font-size: 30px;
+}
+
+#product-text p {
+  margin-top: 1vh;
+  font-size: 20px;
+}
+
+#product img, #product-two img,#product-three img {
+  padding-top: 10vh;
+}
+
+#product-text>div {
+  width: 2vw;
+  height: 0.5vh;
+  background-color: #fff;
+  margin-top: 2vh;
+}
+
+#product-two {
+  width: 33.33vw;
+  height: 100vh;
+  background: linear-gradient( to bottom, #36B5F5, #ABE3FF);
+}
+
+#product-three {
+  width: 33.33vw;
+  height: 100vh;
+  background: linear-gradient( to bottom, #67D6FF, #AEEEBD);
+}
+
+/* 브랜드 소개 */
+#containerFour {
+  width: 100%;
+  height: 100vh;
+  background-color: cornflowerblue;
+}
+
+/* SNS 푸터 */
+#containerFive {
+  width: 100%;
+  height: 100vh;
+  background-color: darkcyan;
+  position: relative;
+}
+
+#footer-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#footer-imgtwo{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
