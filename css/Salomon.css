@@ -15,17 +15,8 @@ body {overflow-x: hidden; }
   width: 100%;
   height: 100vh;
   background-image: url(/img/man-g16552b290_1920.jpg);
-  background-repeat: none;
+  background-repeat: no-repeat;
   position: relative;
-  z-index: 1;
-}
-
-#container-whitebox {
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  opacity: 20%;
-  position: absolute;
   z-index: 1;
 }
 
@@ -42,15 +33,15 @@ body {overflow-x: hidden; }
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 25px;
+  top: 28px;
   left: 7vw;
 }
 
 #menu-trigger div {
   width: 30px;
   height: 4px;
-  background-color: #fff;
-  margin: 8px 0 0 8px;
+  background-color: #000;
+  margin: 6px 0 0 8px;
 }
 
 #gnb {
@@ -71,27 +62,50 @@ body {overflow-x: hidden; }
 
 #gnb li:nth-child(1) {
   background-image: url(/img/search.png);
+  background-repeat: no-repeat;
   background-size: 30px;
+  margin-left: 0.5vw;
 }
 
 #gnb li:nth-child(2) {
   width: 120px;
   height: 80px;
   background-image: url(/img/main-logo.png);
+  background-repeat: no-repeat;
   left: 50%;
-  top: -2vh;
+  top: -1.5vh;
   transform: translate(-50%);
 }
 
 #gnb li:nth-child(3) {
-  border: 1px solid red;
   right: 3vw;
+  width: 30px;
+  height: 30px; 
+  background-image: url(/img/gnb.png);
+  background-repeat: no-repeat;
 }
 
 #gnb li:nth-child(4) {
-  border: 1px solid red;
   right: 0vw;
+  width: 30px;
+  height: 30px; 
+  background-image: url(/img/shop-logo.png);
+  background-repeat: no-repeat;
 }
+
+#gnb li:nth-child(4) div {
+  width: 20px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 20px 0 0 18px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 14px;
+}
+
+
 
 /* 메인텍스트 */
 #main-text-box {
@@ -107,14 +121,14 @@ body {overflow-x: hidden; }
 #main-text-box h1 {
   font-size: 48px;
   color: #FFCA11;
-  text-shadow: 0px 2px 4px rgb(51, 51, 51);;
+  text-shadow: 0px 2px 3px rgb(92, 92, 92);;
 }
 
 #main-text-box p {
   font-size: 20px;
   color: #fff;
   padding-top: 3vh;
-  text-shadow: 0px 4px 6px rgb(51, 51, 51);;
+  text-shadow: 0px 2px 3px rgb(92, 92, 92);;
   line-height: 30px;
 }
 
@@ -141,7 +155,7 @@ body {overflow-x: hidden; }
   width: 50px;
   height: 50px;
   background-image: url(/img/array.png);
-  background-repeat: none;  
+  background-repeat: no-repeat;
   position: absolute;
   bottom: 5vh;
   left: 50%;
@@ -262,7 +276,7 @@ right: 11vw;
   width: 99px;
   height: 70px;
   background-image: url(/img/product-logo.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   position: absolute;
   top: 3vh;
   margin-left: 1.5vw;
@@ -274,7 +288,6 @@ right: 11vw;
   position: absolute;
   bottom: 13vh;
   margin-left: 4vw;
-  
 }
 
 #product-text h3 {
@@ -309,30 +322,104 @@ right: 11vw;
   background: linear-gradient( to bottom, #67D6FF, #AEEEBD);
 }
 
-/* 브랜드 소개 */
+/* 뉴 스토리 */
 #containerFour {
   width: 100%;
   height: 100vh;
-  background-color: cornflowerblue;
+  background-image: url(/img/ama-dablam-g553145f6d_1920.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#four-text-box {
+  width: 30vw;
+  height: 10vh;
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  left: 35vw;
+}
+
+#four-text-box>h3 {
+  font-size: 40px;
+  padding-bottom: 1vh;
+}
+
+#four-text-box>div {
+  width: 2vw;
+  height: 0.4vh;
+  background-color: #000;
+  margin: 0 auto;
+}
+
+#four-text-box>p {
+  padding-top: 2vh;
+}
+
+/* 뉴스토리 이미지 */
+#four-img-leftbox {
+  width: 30vw;
+  height: 60vh;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+
+#leftbox-top {
+  width: 100%;
+  height: 28vh;
+  background-image: url(/img/human2.jpg);
+  background-repeat: no-repeat;
+}
+
+#leftbox-bottom {
+  width: 100%;
+  height: 28vh;
+  background-image: url(/img/backpack2.jpg);
+  background-repeat: no-repeat;
+  margin-top: 4vh;
+}
+
+#four-img-rightbox {
+  width: 47vw;
+  height: 60vh;
+  border: 1px solid red;
+  position: absolute;
+  top: 30vh;
+  right: 10vw;
 }
 
 /* SNS 푸터 */
 #containerFive {
   width: 100%;
   height: 100vh;
-  background-color: darkcyan;
   position: relative;
+  color: #fff;
+  text-align: center;
 }
 
-#footer-img{
-  position: absolute;
-  top: 0;
-  left: 0;
+#containerFive div:nth-child(1){
+  width: 100%;
+  height: 485px;
+  background-image: url(/img/snow-g4bffec992_1920.jpg);
+  background-repeat: no-repeat;
 }
 
-#footer-imgtwo{
-  position: absolute;
-  left: 0;
-  bottom: 0;
+#containerFive div p {
+  font-size: 36px;
+  padding-top: 22vh;
+  cursor: pointer;
+}
+
+#containerFive div img {
+  padding-top: 2vh;
+  cursor: pointer;
+}
+
+#containerFive div:nth-child(2){
+  width: 100%;
+  height: 485px;
+  background-image: url(/img/paris-g72914da20_1920.jpg);
+  background-repeat: no-repeat;
 }
 
